@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.emoji-cont {
+  padding: 30px;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-line-pack: center;
+  align-content: center
 }
 
-.App-link {
-  color: #61dafb;
+.main-cont {
+  background-image: -webkit-gradient(linear,left top,right top,from(#9796f0),to(#fbc7d4));
+  background-image: linear-gradient(90deg,#9796f0,#fbc7d4)
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.img-cont {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  color: #fff
+}
+
+.p-style {
+  font-size: 30px
+}
+
+.button {
+  background-color: #ffce27;
+  color: #000;
+  border-radius: 10px;
+  padding: 10px;
+  border: 0 solid;
+  font-family: "Roboto";
+  font-weight: 900
+}
+
+.img {
+  height: 280px
+}
+
+.score-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: start;
+  justify-content: flex-start
+}
+
+.scorecard-cont {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: justify;
+  justify-content: space-between
+}
+
+.win-lose-cont {
+  width: 35%;
+  color: #fff;
+  border-radius: 30px;
+  padding: 50px;
+  margin: auto
+}
+
+.emoji-item,.win-lose-cont {
+  background-color: hsla(0,0%,100%,.2)
+}
+
+.emoji-item {
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+  list-style-type: none;
+  height: 150px;
+  width: 150px
+}
+
+.score-margin {
+  margin-right: 40px
+}
+
+.nav-cont {
+  background-image: -webkit-gradient(linear,left top,right top,from(#9796f0),to(#fbc7d4));
+  background-image: linear-gradient(90deg,#9796f0,#fbc7d4);
+  color: #fff;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: distribute;
+  justify-content: space-around
+}
+
+li{
+  list-style-type: none;
 }
